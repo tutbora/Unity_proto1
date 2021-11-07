@@ -12,13 +12,8 @@ public class PlayerController : MonoBehaviour {
     public KeyCode switchKey;
     public string inputID;
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
     // Update is called once per frame
-    void Update() {
+    void FixedUpdate() {
         horizontalInput = Input.GetAxis("Horizontal" + inputID);
         forwardInput = Input.GetAxis("Vertical" + inputID);
         // Move the vehicle forward
